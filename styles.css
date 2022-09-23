@@ -23,6 +23,31 @@ button{
     width: 150px;
 }
 
+.main-content{
+    display: flex;
+    flex-direction: column;
+
+}
+@media only screen and (min-width:991.99px){
+    .main-content {
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .content-section1,
+    .content-section2 {
+        width: 50%;
+    }
+    .content-section1{
+        max-width: 500px;
+    }
+}  
+
+.content-section1, .content-section2{
+    width: 100%;
+}
+
 .bg-img{
     background-image: url("./images/bg-hero-mobile.svg");
     background-size: cover;
@@ -31,14 +56,15 @@ button{
     justify-content: center;
 }
 
-h1{
-    text-align: center;
-    font-size: 1.4em;
+.Build {
+    font-size: 2.2rem;  
+    line-height: 45px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content{
-    text-align: center;
-    padding: 20px;
+    margin: 20px auto;
 }
 
 
@@ -78,26 +104,6 @@ h1{
     text-align: center;
  }
 
-.img-flow img{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    display: block;
- }
-
- .img-flow{
-    padding: 3rem;
- }
-
-  .flow-content {
-      text-align: center;
-      padding: 10px;
-  }
-
-  .section-2 {
-      text-align: center;
-  }
-
   .card-grow{
     width: 350px;
     padding: 10px 10px 50px 10px;
@@ -106,61 +112,62 @@ h1{
     box-shadow: 10px 10px 10px #aaaaaa;
     border-radius: 20px;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
   }
+@media only screen and (min-width:991.99px){
+    .card-grow{
+        width: 80%;
+        flex-direction: row;
+        border: none;
+        background-color: white;
+        box-shadow: 1px 1px 10px 1px #aaaaaa;
+        border-radius: 10px;
+        margin: 100px auto;
+    }
+    .container1 {
+        width: 50%;
+        order: 2;
+    }
+    
+    .section1-content{
+        width: 50%;
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-content1{
+        line-height: 30px;
+    }
+    .main-footer{
+        display:flex;
+    }
+}
 
-  .card-flow{
-      width: 350px;
-      padding: 10px 10px 50px 10px;
-      border: 1px solid #BFBFBF;
-      background-color: white;
-      box-shadow: 10px 10px 10px #aaaaaa;
-      margin: auto;
-      border-radius: 20px;
-  }
 
-  .img-user{
-    padding: 3rem;
-  }
-
-  .img-user img{
-    margin-left: auto;
-    margin-right: auto;
+.section1-content, .container1{
     width: 100%;
-    display: block;
-  }
 
-  .card-user{
-      width: 350px;
-      padding: 10px 10px 50px 10px;
-      border: 1px solid #BFBFBF;
-      background-color: white;
-      box-shadow: 10px 10px 10px #aaaaaa;
-      margin: 70px auto;
-      border-radius: 20px;
-  }
-
-  .user-content {
-      text-align: center;
-      padding: 10px;
-  }
-
-  .section-3 {
-      text-align: center;
-  }
+}
   
   .box{
-    width: 350px;
+    max-width: 300px;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 5px 5px 5px #aaaaaa;
-    margin: 30px auto;
+    margin: 0px auto;
     border-radius: 20px;
     text-align: center;
-    height: 150px;
-    transform: scaleY(1.2);
+    transform: translateY(-50%);
   }
 
+  .section2{
+    padding: 3rem 0;
+    padding-top: 5px;
+  }
 
   .get-button{
     color: white;
@@ -170,20 +177,9 @@ h1{
     margin: 10px 5px;
   }
 
-  .logo1 img {
-    width: 150px;
-    margin: 20px;
-    color:white;
-}
 .ready-content{
     color: black;
-    margin: 10px 0px;
 }
-
-.footer-card{
-    transform: scaleY(1.2);
-}
-
 
 .footer{
     background: hsl(192, 100%, 9%);
@@ -192,14 +188,14 @@ h1{
 
 .footer-content{
     list-style: none;
-    padding: 30px 5px 5px 5px;
+    padding: 5px;
     margin: 5px 10px;
 }
 
-.main-content {
-    padding: 20px 10px 10px 10px;
+.main-content1 {
+padding: 30px 5px 5px 5px;
 }
 
 a{
-    padding: 20px 20px 10px 10px;
+ padding: 30px 5px 5px 5px;
 }
